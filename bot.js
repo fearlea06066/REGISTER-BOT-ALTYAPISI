@@ -129,7 +129,7 @@ client.login(ayarlar.token);
 
 //kayıt rol verme
 client.on('guildMemberAdd', async member => {
-  let rol = await db.fetch(`rol3_${member.guild.id}`);
+  let rol = await db.fetch(`rol31_${member.guild.id}`);
    {
   if (!rol) return;
   member.addRole(member.guild.roles.get(rol))
