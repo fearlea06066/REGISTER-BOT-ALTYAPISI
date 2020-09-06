@@ -10,3 +10,8 @@
 8. Adım: Eğer yüklenmeyen modül olursa 'npm i (modül adı)' şeklinde yüklenmeyen modülleri yükleyin.
 9. Adım: ayarlar.json dosyasını açıp bilgilerinizi kendinize göre ayarlayın.
 10. Adım: Modüller yüklendikten sonra, başlat.bat dosyasını açın ve botu çalıştırın.
+
+
+HATA ALIMLARI GIBI DURUMLARDA İLETİŞİM BİLGİLERİ:
+DİSCORD: </shynox>#0001
+DİSCORD DESTEK SUNUCU:https://discord.gg/TXUKfFf
