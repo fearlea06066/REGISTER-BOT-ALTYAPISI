@@ -29,8 +29,8 @@ const ayarlar = require('../ayarlar.json');
     const sorumlu = message.guild.roles.get(db.fetch(`rol3_${message.guild.id}`)); //buraya kayıt sorumlusu rolü gelir
     const log = message.guild.channels.get(db.fetch(`kayıtlog_${message.guild.id}`)); //buraya kayıt edilen kişinin log bilgileri vb düşer.
     const kayıtsay = db.fetch(`toplamkayıt.${message.author.id}.${message.guild.id}`); //yapılan kayıt sayısının fetchlenmesi
-    if (!sorumlu) return message.channel.send(new Discord.RichEmbed().setDescription(`**Sorumlu Rolü Ayarlanmamış!\n Ayaralamak için \`${prefix}kayıtçı-rol @rol\`**`).setColor('BLACK')).then(msg => msg.delete(10000));
-    if (!kayıtlı1) return message.channel.send(new Discord.RichEmbed().setDescription(`**Kayıtlı-Rol(1) Ayarlanmamış!\n Ayaralamak için \`${prefix}kayıtlı-rol 1 @rol\`**`).setColor('BLACK')).then(msg => msg.delete(10000));
+    if (!sorumlu) return message.channel.send(new Discord.RichEmbed().setDescription(`**Sorumlu Rolü Ayarlanmamış!\nAyaralamak için \`${prefix}kayıtçı-rol @rol\`**`).setColor('BLACK')).then(msg => msg.delete(10000));
+    if (!kayıtlı1) return message.channel.send(new Discord.RichEmbed().setDescription(`**Kayıtlı-Rol(1) Ayarlanmamış!\nAyaralamak için \`${prefix}kayıtlı-rol 1 @rol\`**`).setColor('BLACK')).then(msg => msg.delete(10000));
     if(!message.member.roles.get(db.fetch(`rol3_${message.guild.id}`))) { //buraya kayıt sorumlusu rolünün id'sini giriniz.
       return message.channel.send(new Discord.RichEmbed().setDescription("Bu işlemi sadece Ayarlanmış Kayıt Sorumluları gerçekleştirebilir.").setColor('BLACK')).then(msg => msg.delete(10000));
     } else {
@@ -59,8 +59,8 @@ const ayarlar = require('../ayarlar.json');
     const sorumlu = message.guild.roles.get(db.fetch(`rol3_${message.guild.id}`)); //buraya kayıt sorumlusu rolü gelir
     const log = message.guild.channels.get(db.fetch(`kayıtlog_${message.guild.id}`)); //buraya kayıt edilen kişinin log bilgileri vb düşer.
     const kayıtsay = db.fetch(`toplamkayıt.${message.author.id}.${message.guild.id}`); //yapılan kayıt sayısının fetchlenmesi
-    if (!sorumlu) return message.channel.send(new Discord.RichEmbed().setDescription(`**Sorumlu Rolü Ayarlanmamış!\n Ayaralamak için \`${prefix}kayıtçı-rol @rol\`**`).setColor('BLACK')).then(msg => msg.delete(10000));
-    if (!kayıtlı2) return message.channel.send(new Discord.RichEmbed().setDescription(`**Kayıtlı-Rol(2) Ayarlanmamış!\n Ayaralamak için \`${prefix}kayıtlı-rol 2 @rol\`**`).setColor('BLACK')).then(msg => msg.delete(8000));
+    if (!sorumlu) return message.channel.send(new Discord.RichEmbed().setDescription(`**Sorumlu Rolü Ayarlanmamış!\nAyaralamak için \`${prefix}kayıtçı-rol @rol\`**`).setColor('BLACK')).then(msg => msg.delete(10000));
+    if (!kayıtlı2) return message.channel.send(new Discord.RichEmbed().setDescription(`**Kayıtlı-Rol(2) Ayarlanmamış!\nAyaralamak için \`${prefix}kayıtlı-rol 2 @rol\`**`).setColor('BLACK')).then(msg => msg.delete(8000));
     if(!message.member.roles.get(db.fetch(`rol3_${message.guild.id}`))) { //buraya kayıt sorumlusu rolünün id'sini giriniz.
       return message.channel.send(new Discord.RichEmbed().setDescription("Bu işlemi sadece Ayarlanmış Kayıt Sorumluları gerçekleştirebilir.").setColor('BLACK')).then(msg => msg.delete(10000));
     } else {
@@ -89,8 +89,8 @@ const ayarlar = require('../ayarlar.json');
       const sorumlu = message.guild.roles.get(db.fetch(`rol3_${message.guild.id}`)); //buraya kayıt sorumlusu rolü gelir
       const log = message.guild.channels.get(db.fetch(`kayıtlog_${message.guild.id}`)); //buraya kayıt edilen kişinin log bilgileri vb düşer.
       const kayıtsay = db.fetch(`toplamkayıt.${message.author.id}.${message.guild.id}`); //yapılan kayıt sayısının fetchlenmesi
-      if (!sorumlu) return message.channel.send(new Discord.RichEmbed().setDescription(`**Sorumlu Rolü Ayarlanmamış!\n Ayaralamak için \`${prefix}kayıtçı-rol @rol\`**`).setColor('BLACK')).then(msg => msg.delete(10000));
-      if (!kayıtlı3) return message.channel.send(new Discord.RichEmbed().setDescription(`**Kayıtlı-Rol(3) Ayarlanmamış!\n Ayaralamak için \`${prefix}kayıtlı-rol 3 @rol\`**`).setColor('BLACK')).then(msg => msg.delete(8000));
+      if (!sorumlu) return message.channel.send(new Discord.RichEmbed().setDescription(`**Sorumlu Rolü Ayarlanmamış!\nAyaralamak için \`${prefix}kayıtçı-rol @rol\`**`).setColor('BLACK')).then(msg => msg.delete(10000));
+      if (!kayıtlı3) return message.channel.send(new Discord.RichEmbed().setDescription(`**Kayıtlı-Rol(3) Ayarlanmamış!\nAyaralamak için \`${prefix}kayıtlı-rol 3 @rol\`**`).setColor('BLACK')).then(msg => msg.delete(8000));
       if(!message.member.roles.get(db.fetch(`rol3_${message.guild.id}`))) { //buraya kayıt sorumlusu rolünün id'sini giriniz.
         return message.channel.send(new Discord.RichEmbed().setDescription("Bu işlemi sadece Ayarlanmış Kayıt Sorumluları gerçekleştirebilir.").setColor('BLACK')).then(msg => msg.delete(10000));
       } else {
