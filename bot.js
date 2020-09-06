@@ -31,9 +31,9 @@ fs.readdir('./komutlar/', (err, files) => {
     });
 });
 
-//process.on('unhandledRejection', error => {
-// {}
-//});
+process.on('unhandledRejection', error => {
+ {}
+});
 
 
 
