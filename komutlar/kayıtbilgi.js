@@ -14,7 +14,7 @@ const ayarlar = require('../ayarlar.json');
     const kanal = message.guild.channels.get(db.fetch(`kayıtk_${message.guild.id}`)) || "Ayarlanmamış!" //buraya kayıt edilen kişinin log bilgileri vb düşer.
       
       const embed = new Discord.RichEmbed()
-      .setTitle('KAYIT BILGI')
+      .setAuthor(`${message.guild.name} SUNUCUSU` , message.guild.iconURL)
     .setDescription(`**:white_small_square:\`Kayıtlı-rol(1):\`** ${kayıtlı1}\n **:white_small_square:\`Kayıtlı-rol(2):\`** ${kayıtlı2}\n **:white_small_square:\`Kayıtlı-rol(3):\`** ${kayıtlı3}\n **:white_small_square:\`Kayıtsız-rol:\`** ${kayıtsız}\n **:white_small_square:\`Kayıt-sorumlusu:\`** ${kayıtsorum}\n **:white_small_square:\`Kayıt-log:\`** ${log}\n **:white_small_square:\`Kayıt-kanal:\`** ${kanal}`)                                                                           
     .setFooter(message.author.tag , message.author.avatarURL)
     .setTimestamp()
